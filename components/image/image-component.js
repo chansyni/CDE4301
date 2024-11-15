@@ -25,8 +25,10 @@ class ImageComponent extends HTMLElement {
   render() {
     const div = document.createElement("div");
     div.innerHTML = `
-    <img id="${this.tag}" src="${this.source}" alt="${this.subtitle}" style="width: ${this.width || "100%"};">
-    <sub>${this.subtitle}</sub>
+    <div class="image-container">
+      <img id="${this.tag}" src="${this.source}" alt="${this.subtitle}" style="width: ${this.width || "100%"};">
+      <sub>${this.subtitle}</sub>
+    </div>
     <style>
       :host {
         display: block;
