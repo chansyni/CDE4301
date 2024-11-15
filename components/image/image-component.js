@@ -14,12 +14,18 @@ class ImageComponent extends HTMLElement {
 
   attributeChangedCallback(name, _, newValue) {
     this[name] = newValue;
+    if (name === "width" && this.shadowRoot) {
+      const img = this.shadowRoot.querySelector("img");
+      if (img) {
+        img.style.width = newValue;
+      }
+    }
   }
 
   render() {
     const div = document.createElement("div");
     div.innerHTML = `
-    <img id="${this.tag}" src="${this.source}" alt="${this.subtitle}">
+    <img id="${this.tag}" src="${this.source}" alt="${this.subtitle}" style="width: ${this.width || "100%"};">
     <sub>${this.subtitle}</sub>
     <style>
       :host {
@@ -28,7 +34,8 @@ class ImageComponent extends HTMLElement {
       }
 
       img {
-        width: ${this.width}%;
+        max-width: 100%;
+        height: auto;
       }
 
       sub {
