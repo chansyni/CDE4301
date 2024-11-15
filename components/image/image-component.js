@@ -1,6 +1,6 @@
 class ImageComponent extends HTMLElement {
   static get observedAttributes() {
-    return ["tag", "source", "subtitle"];
+    return ["tag", "source", "subtitle", "width"];
   }
 
   constructor() {
@@ -28,7 +28,7 @@ class ImageComponent extends HTMLElement {
       }
 
       img {
-        width: 100%;
+        width: ${this.width}%;
       }
 
       sub {
