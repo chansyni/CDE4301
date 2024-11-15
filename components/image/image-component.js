@@ -33,14 +33,21 @@ class ImageComponent extends HTMLElement {
         text-align: center;
       }
 
+      .image-container {
+        display: inline-block;
+        text-align: center;
+      }
+
       img {
         max-width: 100%;
         height: auto;
       }
 
       sub {
+        display: block;
         font-size: 1rem;
         font-style: italic;
+        margin-top: 8px;
       }
     </style>
   `;
