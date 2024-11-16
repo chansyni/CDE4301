@@ -19,6 +19,10 @@ class ImageComponent extends HTMLElement {
       if (img) {
         img.style.width = newValue;
       }
+      const container = this.shadowRoot.querySelector(".container");
+      if (container) {
+         container.style.width = newValue;
+      }
     }
   }
 

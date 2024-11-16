@@ -66,4 +66,13 @@ p {
 .image-row {
   display: flex;
   justify-content: center;
+  gap: 20px;
+}
+
+image-component {
+  flex: initial;
+}
+
+.image-row .image-component {
+  flex: initial;
 }
