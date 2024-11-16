@@ -19,7 +19,7 @@ class Video extends HTMLElement {
   render() {
     const div = document.createElement("div");
     div.innerHTML = `
-    <iframe id="${this.tag}" width="100%" src="${this.source}"
+    <iframe id="${this.tag}" width="50%" src="${this.source}"
       allowfullscreen></iframe>
     <sub>${this.subtitle}</sub>
     <style>
