@@ -1,6 +1,6 @@
 class Video extends HTMLElement {
   static get observedAttributes() {
-    return ["tag", "source", "subtitle", "width"];
+    return ["tag", "source", "subtitle"];
   }
 
   constructor() {
@@ -14,48 +14,33 @@ class Video extends HTMLElement {
 
   attributeChangedCallback(name, _, newValue) {
     this[name] = newValue;
-    if (name === "width" && this.shadowRoot) {
-      const video = this.shadowRoot.querySelector("video");
-      if (video) {
-        video.style.width = newValue;
-      }
-    }
   }
 
   render() {
     const div = document.createElement("div");
     div.innerHTML = `
-    <div class="container">
-      <video id="${this.tag}" src="${this.source}" controls style="width: ${this.width || "50"}%;">
-        Your browser does not support the video tag.
-      </video>
-      <sub>${this.subtitle}</sub>
-    </div>
+    <iframe id="${this.tag}" width="50%" src="${this.source}"
+      allowfullscreen></iframe>
+    <sub>${this.subtitle}</sub>
     <style>
       :host {
         display: block;
         text-align: center;
       }
 
-      .container {
-        text-align: center;
-      }
-
       sub {
-        display: block;
         font-size: 1rem;
         font-style: italic;
-        margin-top: 8px;
       }
 
-      video {
+      iframe {
+        aspect-ratio: 16 / 9;
         display: block;
         margin: auto;
       }
     </style>
   `;
 
-    this.shadowRoot.innerHTML = "";
     this.shadowRoot.appendChild(div);
   }
 }
