@@ -68,3 +68,7 @@ p {
   justify-content: center;
   gap: 20px;
 }
+
+.image-row image-component {
+  flex: 0 0 auto;
+}
