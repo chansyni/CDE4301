@@ -30,7 +30,7 @@ class ImageComponent extends HTMLElement {
     const div = document.createElement("div");
     div.innerHTML = `
     <div class="image-container">
-      <img id="${this.tag}" src="${this.source}" alt="${this.subtitle}" style="width: ${this.width || "100%"};">
+      <img id="${this.tag}" src="${this.source}" alt="${this.subtitle}" style="width: ${this.width}%;">
       <sub>${this.subtitle}</sub>
     </div>
     <style>
