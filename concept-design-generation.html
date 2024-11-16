@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EIM-454: Concept Design and Generation</title>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  
+    <!--Styling components-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.16.0/cdn/themes/light.css" />
+    <script type="module"
+      src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.16.0/cdn/shoelace-autoloader.js"></script>
+  
+    <link rel="stylesheet" href="./index.css">
+  
+    <!-- TODO: Check if all these are required -->
+    <link rel="stylesheet" href="./components/table-of-content/table-of-content.css">
+
+    <script type="module" src="./components/image/image-component.js"></script>
+  
+    <script type="module" src="./components/video/video.js"></script>
+
+    <link rel="stylesheet" href="./components/scroll-to-top/scroll-to-top.css">
+    <script src="./components/scroll-to-top/scroll-to-top.js"></script>
+</head>
+
+<body>
+  <!--Sidebar-->
+  <div class="wrapper">
+    <div class="sidebar">
+      <h2><a href="index.html">EIM-454</a></h2>
+      <ul>
+        <li><a href="glossary.html">Glossary</a></li>
+        <li>
+          <a href="introduction.html">1. Introduction</a>
+          <ul>
+            <li><a href="introduction.html#background-of-obesity">1.1. Background of Obesity</a></li>
+            <li><a href="introduction.html#treatments-for-obesity">1.2. Treatments for Obesity</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="problem-clarification.html">2. Problem Clarification</a>
+          <ul>
+            <li><a href="problem-clarification.html#setbacks">2.1. Setbacks of Bariatric Surgery</a></li>
+            <li><a href="problem-clarification.html#reasons-low-uptake">2.2. Reasons for Low Uptake</a></li>
+            <li><a href="problem-clarification.html#problem-scope">2.3. Problem Scope</a></li>
+            <li><a href="problem-clarification.html#stakeholder-needs">2.4. Stakeholder Needs</a></li>
+            <li><a href="problem-clarification.html#stakeholder-analysis">2.5. Stakeholder Analysis</a></li>
+            <li><a href="problem-clarification.html#problem-statement">2.6. Problem Statement</a></li>
+            <li><a href="problem-clarification.html#value-proposition">2.7. Value Proposition</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="concept-design-generation.html">3. Concept Design and Generation</a>
+          <ul>
+            <li><a href="concept-design-generation.html#needs-criteria">3.1. Needs Criteria</a></li>
+            <li><a href="concept-design-generation.html#intial-concept-generation">3.2. Initial Concept Generation</a></li>
+            <li><a href="concept-design-generation.html#inital-concept-selection">3.3. Inital Concept Selection</a></li>
+            <li><a href="concept-design-generation.html#concept-refinement">3.4. Concept Refinement</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="prototyping-testing.html">4. Prototyping and Testing</a>
+          <ul>
+            <li><a href="prototyping-testing.html#initial-prototype">4.1. Initial Prototype</a></li>
+            <li><a href="prototyping-testing.html#prototype-parameters">4.2. Prototype Parameters</a></li>
+            <li><a href="prototyping-testing.html#future-plans">4.3. Future Prototyping and Testing Plan</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="discussion.html">5. Discussion</a>
+          <ul>
+            <li><a href="discussion.html#conclusion">5.1. Conclusion</a></li>
+            <li><a href="discussion.html#project-challenges">5.2. Project Challenges</a></li>
+            <li><a href="discussion.html#future-work">5.3. Future Work</a></li>
+          </ul>
+        </li>
+        <li><a href="references.html">References</a></li>
+        <li><a href="appendix.html">Appendix</a></li>
+      <ul>
+    </div>
+  </div>
+
+    <!--Content-->
+    <div class="content">
+        <!--Navigation Buttons-->
+        <sl-button href="index.html">Back to Home</sl-button>
+        <sl-button href="problem-clarification.html">Back to Problem Clarification</sl-button>
+
+        <h1>Concept Design and Generation</h1>
+        <sl-divider></sl-divider>
+    
+        <div>
+            <!--Section 3.1: Needs Criteria-->
+            <div id="needs-criteria">
+                <h2>3.1. Needs Criteria</h2>
+                <p>
+                    The needs criteria with its corresponding rationale is shown in Table 6.
+                </p>
+                <image-component tag="image" source="assets/NeedsCriteria.png" subtitle="Table 6: Needs Criteria" width="100"></image-component>
+            </div>
+
+            <sl-divider></sl-divider>
+
+            <!--Section 3.2: Initial Concept Generation-->
+            <div id="intial-concept-generation">
+                <h2>3.2. Initial Concept Generation</h2>
+                <!--Section 3.2.1: Endoscopic Surgical Stapler-->
+                <div id="ess">
+                    <h3>3.2.1. Endoscopic Surgical Stapler</h3>
+                    <p>
+                        The Endoscopic Surgical Stapler (ESS) (Figure 8) is a two-pronged device designed to staple and cut tissue placed between its 
+                        prongs upon activation. The ESS is inserted into the patient’s stomach trans-orally. The part of the stomach to be removed is 
+                        involuted into the stapler between its prongs (Figure 9), where it is stapled to reduce gastric size, while the excess tissue is cut 
+                        away. This process mimics SG by removing a portion of the stomach to reduce capacity.
+                    </p>
+                    <div class="image-row">
+                        <image-component tag="image" source="assets/ESS.png" subtitle="Figure 8: Endoscopic Surgical Stapler" width="30"></image-component>
+                        <image-component tag="image" source="assets/ESSStomach.png" subtitle="Figure 9: Involution of stomach into ESS and subsequent removal" width="70"></image-component>
+                    </div>
+                </div>
+                <!--Section 3.2.2: Intestinal Sleeve-->
+                <div id="is">
+                    <h3>3.2.2. Intestinal Sleeve</h3>
+                    <p>
+                        The Intestinal Sleeve (IS) (Figure 10) covers the proximal 200cm of the small intestine to prevent it from coming into contact with ingested 
+                        material. This approach mimics the effect of a bypass, but rather than rerouting the ingested material, a physical or chemical barrier reduces
+                        digestion and nutrient absorption.
+                    </p>
+                    <image-component tag="image" source="assets/IS.png" subtitle="Figure 10: Intestinal Sleeve" width="50"></image-component>
+                </div>
+                <!--Section 3.2.3: Dual Endoscopy-->
+                <div id="de">
+                    <h3>3.2.3. Dual Endoscopy</h3>
+                    <p>
+                        The Dual Endoscopy (DE) (Figure 11) method utilises 2 endoscopes during the procedure. The first endoscope is passed through the pylorus 
+                        into the small intestine, and traverses 150-200cm of its length. The second endoscope exits the stomach through a hole made in the stomach 
+                        wall into the peritoneum, where it locates the first endoscope. It then latches onto the small intestine at the same point and brings it up 
+                        towards the stomach. Finally, an anastomosis is created between the stomach and small intestine, resulting in an anatomical configuration 
+                        similar to that of the laparoscopic OAGB (Figure 12). The pylorus is blocked with another stent to minimise ingested material entering the 
+                        original digestive pathway.
+                    </p>
+                    <div class="image-row">
+                        <image-component tag="image" source="assets/DE.png" subtitle="Figure 11: Dual Endoscopy - 2 endoscopes inserted into GI tract" width="40"></image-component>
+                        <image-component tag="image" source="assets/DEAnastomosis.png" subtitle="Figure 12: Anastomosis created with Dual Endoscopy" width="40"></image-component>
+                    </div>
+                </div>
+            </div>
+
+            <sl-divider></sl-divider>
+
+            <!--Section 3.3: Inital Concept Selection-->
+            <div id="inital-concept-selection">
+                <h2>3.3. Inital Concept Selection</h2>
+                <!--Section 3.3.1: Technological Feasibility-->
+                <div id="technological-feasibility">
+                    <h3>3.3.1. Technological Feasibility</h3>
+                    <image-component tag="image" source="assets/TechnologicalAnalysis.png" subtitle="Table 7: Technological Feasibility Analysis" width="100"></image-component>
+                </div>
+                <!--Section 3.3.2: Needs Criteria Evaluation-->
+                <div id="needs-evaluation">
+                    <h3>3.3.2. Needs Criteria Evaluation</h3>
+                    <p>
+                        The three initial concept solutions were scored against the needs criteria in Table 8, on a scale from 0-2 according to the following rubric:
+                    </p>
+                    <ul>
+                        <li>0: Does not meet criteria</li>
+                        <li>1: Meets criteria</li>
+                        <li>2: Exceeds criteria</li>
+                    </ul>
+                    <image-component tag="image" source="assets/Evaluation.png" subtitle="Table 8: Needs Criteria Evaluation" width="90"></image-component>
+                    <p>
+                        DE emerged with the highest score of 8, hence was selected as the concept to proceed with. 
+                    </p>
+                </div>
+            </div>
+
+            <sl-divider></sl-divider>
+
+            <!--Section 3.4: Concept Refinement-->
+            <div id="concept-refinement">
+                <h2>3.4. Concept Refinement</h2>
+                <!--Section 3.4.1: Functional Requirements-->
+                <div id="functional-requirements">
+                    <h3>3.4.1. Functional Requirements</h3>
+                    <p>
+                        There are 4 key functional requirements for the procedure to be successful:
+                    </p>
+                    <ol>
+                        <li><b>Visualisation / Navigation:</b> Enables the surgeon to monitor internal structures and guide instruments accurately.</li>
+                        <br>
+                        <li><b>Intestinal Length Measurement:</b> Ensures accurate measurement of 150-200cm segment of small intestine designated for bypass.</li>
+                        <br>
+                        <li><b>Intestinal Manipulation:</b> Lifts the intestine to align with the stomach in preparation for anastomosis.</li>
+                        <br>
+                        <li><b>Anastomosis:</b> Establishes an alternative pathway for ingested material, bypassing sections of the small intestine to decrease 
+                            digestion and nutrient absorption.</li>
+                    </ol>
+                </div>
+                <!--Section 3.4.2: Morphological Chart-->
+                <div id="morphological-chart">
+                    <h3>3.4.2. Morphological Chart</h3>
+                    <p>
+                        Several solution principles were generated for each functional requirement, as outlined in the morphological chart (Figure 13). A solution 
+                        principle was selected for each functional requirement, combined to form the overall concept solution.
+                    </p>
+                    <image-component tag="image" source="assets/MorphologicalChart.png" subtitle="Figure 13: Morphological Chart" width="100"></image-component>
+                    <p> 
+                        <b>Navigation / Visualisation</b>
+                        <br>
+                        An endoscope with a camera attached at the tip traverses the GI tract, providing the surgeon with real-time internal imaging. Figure 14 
+                        illustrates this concept on a plastic model of the GI tract, while Figures 15 and 16 display images captured by the endoscope in the plastic model 
+                        and the actual system respectively.
+                    </p>
+                    <div class="image-row">
+                        <image-component tag="image" source="assets/GIModel.png" subtitle="Figure 14: Endoscope in plastic model of GI tract" width="33"></image-component>
+                        <image-component tag="image" source="assets/EndoscopeImageModel.png" subtitle="Figure 15: Image captured with endoscope in GI model" width="33"></image-component>
+                        <image-component tag="image" source="assets/EndoscopeImageStomach.png" subtitle="Figure 16: Image captured with endoscope in stomach" width="33"></image-component>
+                    </div>
+                    <p>
+                        <b>Intestinal Length Measurement</b>
+                        <br>
+                        Markings on the endoscope is a straightforward way for intestinal length measurement. Upon reaching the pylorus, an external mark is made on the 
+                        endoscope, followed by another mark 200cm further along (Figure 17). Once the endoscope is advanced to the 2nd marking, a 200cm segment of the intestine 
+                        would have been traversed (Figure 18). However, current endoscopes range only from 25-200cm in length, which is insufficient for this purpose.
+                    </p>
+                    <div class="image-row">
+                        <image-component tag="image" source="assets/Markings.png" subtitle="Figure 17: Markings made on endoscope" width="60"></image-component>
+                        <image-component tag="image" source="assets/200cm.png" subtitle="Figure 18: 200cm traversed by endoscope" width="40"></image-component>
+                    </div>
+                    <p>
+                        <b>Intestinal Manipulation</b>
+                        <br>
+                        A grasper grabs onto the intestine so that it can be elevated towards the stomach. However, a key limitation of current endoscopic graspers is their 
+                        size (Figure 19), constrained to fit through a 5mm endoscopic channel (Figure 20). This increases the risk of unintentional intestinal perforations 
+                        due to an insufficient grasping force to securely hold tissue.
+                    </p>
+                    <div class="image-row">
+                        <image-component tag="image" source="assets/SmallGrasper.png" subtitle="Figure 19: Current graspers are small" width="30"></image-component>
+                        <image-component tag="image" source="assets/EndoscopicChannels.png" subtitle="Figure 20: Working channel within endoscope" width="60"></image-component>
+                    </div>
+                    <p>
+                        An Axios stent (Figure 21) consists of 2 large flanges at opposite ends, which expand upon deployment (Video 1). These flanges have a wider radius 
+                        than tissue openings, effectively securing tissue layers together. The stent also features a wide internal diameter, permitting the passage of 
+                        ingested material, hence facilitating a successful anastomosis between the stomach and intestine (Figure 22). 
+                    </p>
+                    <div class="image-row">
+                        <image-component tag="image" source="assets/AxiosStent.png" subtitle="Figure 21: Axios Stent from Boston Scientific" width="50"></image-component>
+                        <image-component tag="image" source="assets/StentDeployment.png" subtitle="Figure 22: Stent deployment for anastomosis" width="50"></image-component>
+                    </div>
+                    <br>
+                    <video-component tag="video" source="https://www.youtube.com/embed/5OBXJvcmUA8?si=WT9kHu6DHkw4R7je" subtitle="Video 1: Deployment of Axios stent" width="50"></video-component>
+                </div>
+                <!--Section 3.4.3: Focus Area Selection-->
+                <div id="focus-area-selection">
+                    <h3>3.4.3. Focus Area Selection</h3>
+                    <p>
+                        To define the project scope, the focus was narrowed to a single functional requirement for device innovation. Table 9 presents key considerations 
+                        for the development of devices for each functional component.
+                    </p>
+                    <image-component tag="image" source="assets/FocusArea.png" subtitle="Table 9: Considerations for focus area selection" width="100"></image-component>
+                    <p>
+                        Following analysis, the creation of a device for intestinal manipulation was selected as the focus with the greatest potential for an innovative 
+                        and novel solution.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!--Navigation Buttons-->
+        <sl-button href="prototyping-testing.html">To Prototyping and Testing</sl-button>
+        <sl-button class="scroll-to-top" variant="primary" size="medium" circle onclick="scrollToTop()">
+            <sl-icon name="arrow-up" label="Settings"></sl-icon>
+        </sl-button>
+    </div>
+</body>
+
+</html>

@@ -1,6 +1,6 @@
 class ImageComponent extends HTMLElement {
   static get observedAttributes() {
-    return ["tag", "source", "subtitle"];
+    return ["tag", "source", "subtitle", "width"];
   }
 
   constructor() {
@@ -14,26 +14,46 @@ class ImageComponent extends HTMLElement {
 
   attributeChangedCallback(name, _, newValue) {
     this[name] = newValue;
+    if (name === "width" && this.shadowRoot) {
+      const img = this.shadowRoot.querySelector("img");
+      if (img) {
+        img.style.width = newValue;
+      }
+      const container = this.shadowRoot.querySelector(".container");
+      if (container) {
+         container.style.width = newValue;
+      }
+    }
   }
 
   render() {
     const div = document.createElement("div");
     div.innerHTML = `
-    <img id="${this.tag}" src="${this.source}" alt="${this.subtitle}">
-    <sub>${this.subtitle}</sub>
+    <div class="image-container">
+      <img id="${this.tag}" src="${this.source}" alt="${this.subtitle}" style="width: ${this.width}%;">
+      <sub>${this.subtitle}</sub>
+    </div>
     <style>
       :host {
         display: block;
         text-align: center;
       }
 
+      .image-container {
+        display: inline-block;
+        text-align: center;
+      }
+
       img {
-        width: 100%;
+        max-width: 100%;
+        height: auto;
       }
 
       sub {
+        display: block;
         font-size: 1rem;
         font-style: italic;
+        margin-top: 8px;
       }
     </style>
   `;

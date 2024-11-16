@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EIM-454: Introduction</title>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  
+    <!--Styling components-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.16.0/cdn/themes/light.css" />
+    <script type="module"
+      src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.16.0/cdn/shoelace-autoloader.js"></script>
+  
+    <link rel="stylesheet" href="./index.css">
+  
+    <!-- TODO: Check if all these are required -->
+    <link rel="stylesheet" href="./components/table-of-content/table-of-content.css">
+
+    <script type="module" src="./components/image/image-component.js"></script>
+  
+    <script type="module" src="./components/video/video.js"></script>
+
+    <link rel="stylesheet" href="./components/scroll-to-top/scroll-to-top.css">
+    <script src="./components/scroll-to-top/scroll-to-top.js"></script>
+</head>
+
+<body>
+  <!--Sidebar-->
+  <div class="wrapper">
+    <div class="sidebar">
+      <h2><a href="index.html">EIM-454</a></h2>
+      <ul>
+        <li><a href="glossary.html">Glossary</a></li>
+        <li>
+          <a href="introduction.html">1. Introduction</a>
+          <ul>
+            <li><a href="introduction.html#background-of-obesity">1.1. Background of Obesity</a></li>
+            <li><a href="introduction.html#treatments-for-obesity">1.2. Treatments for Obesity</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="problem-clarification.html">2. Problem Clarification</a>
+          <ul>
+            <li><a href="problem-clarification.html#setbacks">2.1. Setbacks of Bariatric Surgery</a></li>
+            <li><a href="problem-clarification.html#reasons-low-uptake">2.2. Reasons for Low Uptake</a></li>
+            <li><a href="problem-clarification.html#problem-scope">2.3. Problem Scope</a></li>
+            <li><a href="problem-clarification.html#stakeholder-needs">2.4. Stakeholder Needs</a></li>
+            <li><a href="problem-clarification.html#stakeholder-analysis">2.5. Stakeholder Analysis</a></li>
+            <li><a href="problem-clarification.html#problem-statement">2.6. Problem Statement</a></li>
+            <li><a href="problem-clarification.html#value-proposition">2.7. Value Proposition</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="concept-design-generation.html">3. Concept Design and Generation</a>
+          <ul>
+            <li><a href="concept-design-generation.html#needs-criteria">3.1. Needs Criteria</a></li>
+            <li><a href="concept-design-generation.html#intial-concept-generation">3.2. Initial Concept Generation</a></li>
+            <li><a href="concept-design-generation.html#inital-concept-selection">3.3. Inital Concept Selection</a></li>
+            <li><a href="concept-design-generation.html#concept-refinement">3.4. Concept Refinement</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="prototyping-testing.html">4. Prototyping and Testing</a>
+          <ul>
+            <li><a href="prototyping-testing.html#initial-prototype">4.1. Initial Prototype</a></li>
+            <li><a href="prototyping-testing.html#prototype-parameters">4.2. Prototype Parameters</a></li>
+            <li><a href="prototyping-testing.html#future-plans">4.3. Future Prototyping and Testing Plan</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="discussion.html">5. Discussion</a>
+          <ul>
+            <li><a href="discussion.html#conclusion">5.1. Conclusion</a></li>
+            <li><a href="discussion.html#project-challenges">5.2. Project Challenges</a></li>
+            <li><a href="discussion.html#future-work">5.3. Future Work</a></li>
+          </ul>
+        </li>
+        <li><a href="references.html">References</a></li>
+        <li><a href="appendix.html">Appendix</a></li>
+      <ul>
+    </div>
+  </div>
+
+  <!--Content-->
+  <div class="content">
+    <!--Navigation Buttons-->
+    <sl-button href="index.html">Back to Home</sl-button>
+    <sl-button href="glossary.html">Back to Glossary</sl-button>
+
+    <h1>Introduction</h1>
+    <sl-divider></sl-divider>
+
+    <div>
+      <!--Section 1.1: Background of Obesity-->
+      <div id="background-of-obesity">
+        <h2>1.1. Background of Obesity</h2>
+        <!--Section 1.1.1: Definition-->
+        <div id="definition">
+            <h3>1.1.1. Definition</h3>
+            <p>
+                Obesity is clinically defined by a Body Mass Index (BMI) exceeding 30kg/m², with severe obesity defined as BMI over 35kg/m² 
+                (Singapore Ministry of Health, 2022). The BMI is a metric for assessing body mass weight relative to height, calculated by 
+                dividing an individual’s weight (in kilograms) by the square of their height (in metres) (Cleveland Clinic, n.d.). 
+            </p>
+        </div>
+        <!--Section 1.1.2: Prevalence-->
+        <div id="prevalence">
+            <h3>1.1.2. Prevalence</h3>
+            <p>
+                Globally, over 1 billion individuals are affected by obesity, with its worldwide prevalence more than doubling since 1990 (World 
+                Health Organisation, 2024). This trend is similarly reflected in Singapore, with the rate of obesity increasing from 5.1% in 1991 
+                to 11.6% in 2022 (World Obesity Federation, n.d.). Projections indicate a continued upward trajectory, affirming obesity as a 
+                severe global health epidemic (Koliaki et al., 2023).
+            </p>
+        </div>
+        <!--Section 1.1.3: Causes-->
+        <div id="causes">
+            <h3>1.1.3. Causes</h3>
+            <p>
+                Obesity is a complex condition influenced by multiple factors.
+                <br><br>
+                A primary cause is an imbalance between caloric intake and energy expenditure. Genetic predispositions that affect metabolism 
+                and fat storage can also make individuals more prone to weight gain. Additionally, environmental and social factors such as 
+                limited access to healthy foods, sedentary lifestyles, and socioeconomic barriers can contribute to obesity (NHLBI, NIH, 2022).
+            </p>
+        </div>
+        <!--Section 1.1.4: Health Risks-->
+        <div id="health-risks">
+            <h3>1.1.4. Health Risks</h3>
+            <p>
+                Obesity is associated with a myriad of health risks, significantly increasing the likelihood of the development of comorbid 
+                conditions such as Type 2 Diabetes (T2D), Hypertension, Hyperlipidemia, Sleep Apnea, Cardiovascular Diseases and specific 
+                cancer types (National Institute of Diabetes and Digestive and Kidney Diseases, 2023). On average, individuals with obesity 
+                incur an additional $720 annually in medical expenses as compared to those with a healthy BMI (Chay et al., 2022).
+            </p>
+        </div>
+      </div>
+
+      <sl-divider></sl-divider>
+
+      <!--Section 1.2: Treatments for Obesity-->
+      <div id="treatments-for-obesity">
+        <h2>1.2. Treatments for Obesity</h2>
+        <p>
+            Table 1 summarises the various treatment options for obesity.
+        </p>
+        <image-component tag="image" source="assets/TreatmentSummary.png" subtitle="Table 1: Summary of obesity treatment options" width="100"></image-component>
+        <!--Section 1.2.1: Lifestyle and Dieting-->
+        <div id="lifestyle-and-dieting">
+            <h3>1.2.1. Lifestyle and Dieting</h3>
+            <p>
+                Lifestyle and Dietary Modification is the foundational approach to obesity management. It is primarily aimed at achieving a caloric 
+                deficit, whereby energy expenditure outweighs caloric intake. This can be facilitated by caloric restriction via dietary adjustments, 
+                or increasing energy expenditure via increased physical activity (Wadden et al., 2020).
+                <br><br>
+                Although this is the most natural way of weight reduction, this method relies heavily on patient adherence to strict dietary and exercise 
+                regimens. This compliance can be particularly challenging for a variety of reasons, for example, changes to appetite-related hormones 
+                that induce increased hunger and cravings (Wadden et al., 2020). 
+                <br><br>
+                Lifestyle and dietary modifications yield variable outcomes and are therefore generally insufficient as a standalone, long-term solution 
+                for effective weight loss and maintenance. 
+            </p>
+        </div>
+
+        <!--Section 1.2.2: Medication-->
+        <div id="medication">
+            <h3>1.2.2. Medication</h3>
+            <p>
+                Weight-loss pharmacotherapy targets the regulation of hormones released post food intake, to modulate metabolic processes. 
+                For example, semaglutide mimics Glucagon-like Peptide-1, a hormone that promotes satiety and slows gastric emptying. The medication 
+                is self-administered via subcutaneous injection, typically using an injection pen delivered into the abdomen. Dosing intervals range 
+                from daily to weekly, depending on medication type and doctor’s recommendation (Kommu & Whitfield, 2024).
+                <br><br>
+                Consistent medication usage confers about 5-10% weight loss on average (Tchang et al., 2024). However, weight regain is common and 
+                expected upon medication discontinuation, necessitating chronic use to achieve long-term weight loss outcomes (Tchang et al., 2024). 
+                At a monthly cost of $200-300, sustained use may impose financial burdens on the patient.
+            </p>
+        </div>
+
+        <!--Section 1.2.3: Endoscopic Bariatric Procedures-->
+        <div id="endoscopic-bariatric-procedures">
+            <h3>1.2.3. Endoscopic Bariatric Procedures</h3>
+            <p>
+                Endoscopic Bariatric Procedures (EBP) are performed using a flexible endoscope, which is inserted trans-orally to access the 
+                Gastrointestinal (GI) tract, facilitating a 15-20% weight loss on average (Lee et al., 2023). 
+                <br><br>
+                The Endoscopic Sleeve Gastroplasty (Figure 1) is a widely utilised technique, in which the stomach is sutured internally to reduce gastric size. 
+                Another common procedure involves the placement of an inflatable Gastric Balloon (Figure 2) into the stomach, causing a reduction in its available 
+                volume (University of Michigan Health, n.d.).
+            </p>
+            <div class="image-row">
+              <image-component tag="image" source="assets/ESG.png" subtitle="Figure 1: Endoscopic Sleeve Gastroplasty" width="50"></image-component>
+              <image-component tag="image" source="assets/GastricBalloon.png" subtitle="Figure 2: Gastric Balloon" width="50"></image-component>
+            </div>
+            <p>
+                EBPs are constrained by the functionality and manoeuvrability of the endoscope, limiting the ability to achieve comprehensive metabolic 
+                changes. Hence, the primary focus of EBPs is the naive approach of gastric restriction, which is unsustainable in the long term due to 
+                the adaptation of the human body with time, leading to an expected weight regain (Mauro et al., 2023). Additionally, adverse side effects 
+                such as discomfort and acid reflux are frequently reported (Mohamed et al., 2022).
+            </p>
+        </div>
+
+        <!--Section 1.2.4: Bariatric Surgery-->
+        <div id="bariatric-surgery">
+            <h3>1.2.4. Bariatric Surgery</h3>
+            <p>
+                Bariatric surgery aims to surgically alter parts of the GI system, such as the stomach or small intestine. Currently, most 
+                bariatric surgeries are performed laparoscopically. Bariatric surgery has shown to confer 20-30% weight loss and remission of 
+                comorbidities such as T2D (Lee et al., 2023), making it the gold standard for obesity management.
+                <br><br>
+                Sleeve Gastrectomy (SG) (Figure 3) is the most common procedure, accounting for 70% of bariatric surgeries in Singapore. It reduces 
+                gastric volume via the removal of approximately 70% of the stomach, to limit food intake. The Roux-en-Y Gastric Bypass (RYGB) (Figure 4) 
+                and One-Anastomosis Gastric Bypass (OAGB) (Figure 5) involve bypassing approximately 150-200cm of the small intestine to reduce digestion 
+                and nutrient absorption (Lee et al., 2023). This is achieved by constructing a new anastomosis between the distal part of the small intestine 
+                and the stomach. The RYGB and OAGB differ in their anatomical configurations, with the RYGB resulting in two anastomoses, while the OAGB 
+                involves a simpler, more straightforward single anastomosis.
+            </p>
+            <div class="image-row">
+              <image-component tag="image" source="assets/SG.png" subtitle="Figure 3: Sleeve Gastrectomy" width="33"></image-component>
+              <image-component tag="image" source="assets/RYGB.png" subtitle="Figure 4: Roux-en-Y Gastric Bypass" width="33"></image-component>
+              <image-component tag="image" source="assets/OAGB.png" subtitle="Figure 5: One-Anastomosis Gastric Bypass" width="33"></image-component>
+            </div>
+        </div>
+
+        </div>
+      </div>
+
+      <!--Navigation Buttons-->
+      <sl-button href="problem-clarification.html">To Problem Clarification</sl-button>
+      <sl-button class="scroll-to-top" variant="primary" size="medium" circle onclick="scrollToTop()">
+          <sl-icon name="arrow-up" label="Settings"></sl-icon>
+      </sl-button>
+  </div>
+</body>
+
+</html>

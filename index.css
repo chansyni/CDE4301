@@ -7,12 +7,72 @@ body {
 }
 
 .content {
-  max-width: 800px;
   margin: auto;
-  padding: 10%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 500px;
+  padding-right: 150px;
 }
 
 p {
   text-align: justify;
   font-size: 1.1rem;
+}
+
+.wrapper {
+  display: flex;
+  position: relative;
+}
+
+.wrapper .sidebar {
+  position: fixed;
+  width: 350px;
+  height: 100%;
+  background: #D3D3D3 ;
+  overflow-y: auto;
+}
+
+.wrapper .sidebar h2 {
+  text-decoration: none;
+  text-align: left;
+  padding-top: 20px;
+  padding-left: 20px;
+  color: #000;
+  margin: 0;
+}
+
+.wrapper .sidebar h2 a {
+  text-decoration: none;
+  color: #000;
+}
+
+.wrapper .sidebar ul {
+  padding: 0;
+  list-style: none;
+}
+
+.wrapper .sidebar ul li{
+  padding-left: 20px;
+  list-style: none;
+  padding-top: 4px;
+}
+
+.wrapper .sidebar ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 15px;
+}
+
+.image-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+image-component {
+  flex: initial;
+}
+
+.image-row .image-component {
+  flex: initial;
 }
