@@ -67,10 +67,4 @@ p {
   display: flex;
   justify-content: center;
   gap: 20px;
-  max-width: 100%;
-  margin: auto;
-}
-
-.image-row image-component {
-  flex: 0 0 auto;
 }

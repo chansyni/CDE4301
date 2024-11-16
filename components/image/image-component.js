@@ -15,9 +15,13 @@ class ImageComponent extends HTMLElement {
   attributeChangedCallback(name, _, newValue) {
     this[name] = newValue;
     if (name === "width" && this.shadowRoot) {
-      const container = this.shadowRoot.querySelector(".image-container");
+      const img = this.shadowRoot.querySelector("img");
+      if (img) {
+        img.style.width = newValue;
+      }
+      const container = this.shadowRoot.querySelector(".container");
       if (container) {
-            container.style.width = `${newValue}%`;
+         container.style.width = newValue;
       }
     }
   }
@@ -25,9 +29,8 @@ class ImageComponent extends HTMLElement {
   render() {
     const div = document.createElement("div");
     div.innerHTML = `
-    <div class="image-container" style="width: ${this.width}%;">
-      <img id="${this.tag}" src="${this.source}" alt="${this.subtitle}">
-      <sub>${this.subtitle}</sub>
+     <div class="image-container">
+      <img id="${this.tag}" src="${this.source}" alt="${this.subtitle}" style="width: ${this.width}%;">
     </div>
     <style>
       :host {
